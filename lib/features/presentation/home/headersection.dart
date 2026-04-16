@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_task/core/responsive/responsive_extensions.dart';
 
 class Headersection extends StatelessWidget {
   const Headersection({super.key});
@@ -10,16 +11,19 @@ class Headersection extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-      const Icon(Icons.add),
+      const Icon(Icons.add, size: 30),
       Row(
         children: const [
-          Text("_jwsv en", style: TextStyle(fontSize: 18)),
+          Text("_jwsv en", style: TextStyle(fontSize: 25)),
           Icon(Icons.verified, color: Colors.blue, size: 16),
+          Icon(Icons.arrow_circle_down_sharp)
         ],
       ),
       Row(
-        children: const [
-          Icon(Icons.menu),
+        children:  [
+          ImageIcon(AssetImage('assets/png/tthreat.png')),
+          SizedBox(width: context.w(10)),
+          Icon(Icons.menu,size: 30),
         ],
       ),
         ],

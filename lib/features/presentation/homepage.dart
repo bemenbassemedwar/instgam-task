@@ -23,26 +23,29 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       backgroundColor: context.appTheme.primarywhite,
 
-      body: SafeArea(
-        child: Column(
-          children: [
-            Headersection(),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Profileinfo(),
-                    Bio(),
-                    EditProfile(),
-                    Story(),
-                    Taps(),
-                    Post(),
-                  ],
+      body: Padding(
+        padding: const EdgeInsets.all(15),
+        child: SafeArea(
+          child: Column(
+            children: [
+              Headersection(),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Profileinfo(),
+                      Bio(),
+                      EditProfile(),
+                      Story(),
+                      Taps(),
+                      Post(),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
 

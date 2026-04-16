@@ -36,20 +36,20 @@ class Profileinfo extends StatelessWidget {
         children: const [
           Column(
             children: [
-              Text("14"),
-              Text("posts"),
+              Text("14",style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
+              Text("posts",style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
             ],
           ),
           Column(
             children: [
-              Text("1,633"),
-              Text("followers"),
+              Text("1,633",style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
+              Text("followers",style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
             ],
           ),
           Column(
             children: [
-              Text("1,376"),
-              Text("following"),
+              Text("1,376", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
+              Text("following",style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
             ],
           ),
         ],

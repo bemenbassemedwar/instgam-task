@@ -6,26 +6,44 @@ class EditProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-  children: [
-    Expanded(
-      child: OutlinedButton(
-        onPressed: () {},
-        child:  Text("Edit profile",style: TextStyle(
-          color: context.appTheme.mainBlack
-        ),),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        children: [
+      Expanded(
+        child: OutlinedButton(
+           style:  OutlinedButton.styleFrom(
+            backgroundColor: context.appTheme.background,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(5),
+            ),
+            side: BorderSide(color: context.appTheme.mainBlack),
+          ) ,
+          onPressed: () {},
+          child:  Text("Edit profile",style: TextStyle(
+            color: context.appTheme.mainBlack
+          ),),
+        ),
       ),
-    ),
-    const SizedBox(width: 10),
-    Expanded(
-      child: OutlinedButton(
-        onPressed: () {},
-        child:  Text("Share profile",style: TextStyle(
-          color: context.appTheme.mainBlack
-        ),),
+      const SizedBox(width: 10),
+      Expanded(
+        child: OutlinedButton(
+          style:  OutlinedButton.styleFrom(
+          backgroundColor: context.appTheme.background,
+
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(5),
+            ),
+            side: BorderSide(color: context.appTheme.mainBlack),
+          ) ,
+          onPressed: () {},
+          child:  Text("Share profile",style: TextStyle(
+            color: context.appTheme.mainBlack
+          ),),
+        ),
       ),
-    ),
-  ],
-);
+        ],
+      ),
+    );
   }
 }
