@@ -9,6 +9,7 @@ class Taps extends StatelessWidget {
   mainAxisAlignment: MainAxisAlignment.spaceAround,
   children: const [
     Icon(Icons.grid_on),
+    Icon(Icons.recycling),
     Icon(Icons.video_library),
     Icon(Icons.person),
   ],
