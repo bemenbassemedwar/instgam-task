@@ -8,21 +8,19 @@ class Post extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
   shrinkWrap: true,
-  physics: NeverScrollableScrollPhysics(),
-  itemCount: 3,
+  physics: ScrollPhysics(),
+  itemCount: 6,
   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
     crossAxisCount: 3,
     crossAxisSpacing: 2,
     mainAxisSpacing: 2,
   ),
   itemBuilder: (context, index) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Image.asset(
-        width: context.w(100),
-        "assets/png/profile.png",
-        fit: BoxFit.cover,
-      ),
+    return Image.asset(
+      width: context.w(124),
+      height: context.h(166),
+      "assets/png/profile.png",
+      fit: BoxFit.cover,
     );
   },
 );

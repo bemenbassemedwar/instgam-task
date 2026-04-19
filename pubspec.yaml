@@ -71,6 +71,8 @@ flutter_gen:
   assets:
     - .env
     - assets/png/
+    - assets/svg/
+
   fonts:
     enabled: true
 

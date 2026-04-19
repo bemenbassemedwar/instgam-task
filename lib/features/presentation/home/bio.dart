@@ -21,11 +21,23 @@ class Bio extends StatelessWidget {
                              SizedBox(height: context.h(10)),
                              Row(
                               children: [
-                                ImageIcon(AssetImage('assets/png/tthreat.png')),
+                                ImageIcon(AssetImage('assets/png/Threads.png')),
                                 SizedBox(width:context.w(5)),
                                 Text("_jwsv en"),
                                 SizedBox(width:context.w(10)),
-                                 Icon(Icons.facebook_outlined, size: 16),
+                                    Stack(
+                                      alignment: Alignment.center,
+                                      children: [
+                                        ImageIcon(
+                                          AssetImage('assets/png/Ellipse.png'),
+                                          
+                                        ),
+                                        ImageIcon(
+                                          AssetImage('assets/png/Facebook.png'),
+                                          
+                                        ),
+                                      ],
+                                    ),
                                 SizedBox(width:context.w(5)),
                                 Text("Jack chiorlu"),
                               ],

@@ -15,9 +15,9 @@ class EditProfile extends StatelessWidget {
            style:  OutlinedButton.styleFrom(
             backgroundColor: context.appTheme.background,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5),
+              borderRadius: BorderRadius.circular(3),
             ),
-            side: BorderSide(color: context.appTheme.mainBlack),
+            side: BorderSide(color: context.appTheme.primarywhite),
           ) ,
           onPressed: () {},
           child:  Text("Edit profile",style: TextStyle(
@@ -32,9 +32,9 @@ class EditProfile extends StatelessWidget {
           backgroundColor: context.appTheme.background,
 
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5),
+              borderRadius: BorderRadius.circular(3),
             ),
-            side: BorderSide(color: context.appTheme.mainBlack),
+            side: BorderSide(color: context.appTheme.primarywhite),
           ) ,
           onPressed: () {},
           child:  Text("Share profile",style: TextStyle(

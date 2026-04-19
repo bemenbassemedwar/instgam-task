@@ -13,15 +13,15 @@ class Headersection extends StatelessWidget {
         children: [
       const Icon(Icons.add, size: 30),
       Row(
-        children: const [
+        children:  [
           Text("_jwsv en", style: TextStyle(fontSize: 25)),
           Icon(Icons.verified, color: Colors.blue, size: 16),
-          Icon(Icons.arrow_circle_down_sharp)
+          Image.asset('assets/png/Chevron Down.png'),
         ],
       ),
       Row(
         children:  [
-          ImageIcon(AssetImage('assets/png/tthreat.png')),
+          ImageIcon(AssetImage('assets/png/Threads.png'),),
           SizedBox(width: context.w(10)),
           Icon(Icons.menu,size: 30),
         ],
